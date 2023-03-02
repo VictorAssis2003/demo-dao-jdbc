@@ -1,6 +1,9 @@
 package application;
 
+import java.util.Date;
+
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 	
@@ -10,7 +13,10 @@ public class Program {
 		dp.setId(1);
 		dp.setName("Contabilidade");
 
-		System.out.println(dp);
+		Seller seller = new Seller(21, "Victor", "victor@gmail", new Date(), 2000.00, dp);
+
+		System.out.println(seller);
+
 	}
 
 }
