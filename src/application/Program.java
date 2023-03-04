@@ -11,15 +11,14 @@ public class Program {
 	
 	public static void main(String[] args) {
 		
-		Department dp = new Department();
-		dp.setId(1);
-		dp.setName("Contabilidade");
-
+		
 
 
 		SellerDAO sellerDao = DAOFactory.createSellerDAO();
 		
-		Seller seller = sellerDao.findById(3);
+		System.out.println("======TEST 1 : seller findById ======");
+		
+		Seller seller = sellerDao.findById(2);
 		
 		System.out.println(seller);
 		
