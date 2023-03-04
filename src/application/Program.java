@@ -15,13 +15,16 @@ public class Program {
 		dp.setId(1);
 		dp.setName("Contabilidade");
 
-		Seller seller = new Seller(21, "Victor", "victor@gmail", new Date(), 2000.00, dp);
 
-		System.out.println(seller);
 
 		SellerDAO sellerDao = DAOFactory.createSellerDAO();
 		
+		Seller seller = sellerDao.findById(3);
 		
+		System.out.println(seller);
+		
+		
+		 
 	}
 
 }
